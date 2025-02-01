@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e5f0e0;
+    color: #000000;
+}
+
+
+
+
+
+#header{
+    width: 100%;
+    background-position: center;
+    font-family: Verdana, sans-serif;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+#header .container{
+    padding: 0 20%;
+    /*background: linear-gradient(0deg, #e5f0e0, #FFFFFF 100%);*/
+    background: #E5F0E0;
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #296E27;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*--------------------photo----------------*/
+
+
+#photo{
+    background: linear-gradient(0deg, #FFFFFF, #e5f0e0 10%);
+    padding-top: 50px;
+    height: 370px;
+}
+
+.pic{
+    height: 288px;
+    width: 768px;
+    display: block;
+    margin: auto;
+}
+
+.photo_container h2{
+    text-align: center;
+}
+
+
+/*-------------------about----------------------*/
+
+#about{
+    background: #FFFFFF;
+    padding: 30px 20%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#about h1{
+    color: #296E27;    
+    font-family: Verdana, sans-serif;
+}
+
+
+
+.intro p{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+.tab{
+    padding: 30px;
+}
+
+.tab-titles{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #296E27;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 15px 0;
+}
+
+.tab-contents ul li span{
+    color: #296E27;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+    justify-content: center;
+}
+
+.tab-contents.active-tab{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.word-card {
+    border: 2px solid #296E27;
+    padding: 10px 20px;
+    background-color: #296E27;;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#portfolio{
+    padding: 50px 15%;
+    background: #FFFFFF;  
+    font-family: Arial, sans-serif;
+    
+}
+
+#portfolio .sub-title{
+    text-align: center;
+}
+
+.work-list{
+    display: list-item;
+    grid-gap: 40px;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.work{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.work-image {
+    flex: 1; /* Take up available space for the image */
+}
+
+.work-description {
+    flex: 1; /* Take up available space for the description */
+    text-align: center; /* Center align the text */
+    margin-left: 20px; /* Adds space between the image and text */
+    text-decoration: none;
+    
+}
+
+.work-description a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.work img{
+    max-width:100%;
+    height: auto;
+    display: block;
+    
+    
+    /*height: 500px;*/
+    /*width: 500px;*/
+    /*border-radius: 10px;*/
+    /*display: block;*/
+    /*transition: transform 0.5;*/
+}
+
+.work-description p{
+    font-size: 13px;
+}
+
+hr{
+    border-width: 1px;
+    border-color: #FFFFFF;
+}
+
+
+/*----------------------contact-------------------*/
+
+#contact{
+    padding: 20px 20%;
+    background: linear-gradient(0deg, #e5f0e0 90%, #FFFFFF 100%);
+    font-family: Verdana, sans-serif;
+}
+
+#contact h1 {
+    margin-bottom: 20px;
+}
+
+#contact .container{
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#contact .container span {
+    display: inline-block;
+}
+
+#contact .container span a {
+    margin-right: 15px; /* Adds space between the icon and the link text */
+    
+    text-decoration: none;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
